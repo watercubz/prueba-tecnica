@@ -1,79 +1,89 @@
-# prueba tecnica Laravel + Inertia.js (React + Vite)
+# 🚀 Prueba Técnica: Laravel + Inertia.js (React + Vite)
 
-Este proyecto usa Laravel con Inertia.js y React para el frontend, gestionado con Vite.
-
----
-
-## Requisitos
-
-- PHP
-- Composer
-- Node.js 18+
-- pnpm / npm / yarn
-- SQLite
-- Git
+Este proyecto utiliza **Laravel** en el backend e **Inertia.js con React** en el frontend, administrado con **Vite**.
 
 ---
 
-## Pasos para correr el proyecto en local
+## 📋 Requisitos
+
+-   PHP
+-   Composer
+-   Node.js 18+
+-   pnpm / npm / yarn
+-   SQLite (o MySQL/PostgreSQL)
+-   Git
+
+---
+
+## 🎥 Demo
+
+la aplicación en local:
+
+👉 [Ver demostración en YouTube](https://youtu.be/YLPCGZnQIMQ)
+
+---
+
+## ⚙️ Instalación local
 
 ### 1. Clonar el repositorio
 
 ```bash
 git clone https://github.com/watercubz/prueba-tecnica.git
 cd prueba-tecnica
-````
+```
 
-### 2. Instalar dependencias PHP y Node.js
+### 2. Instalar dependencias
 
 ```bash
 composer install
-pnpm install          # o npm install
+pnpm install  # o npm install
 ```
 
-### 3. Crear archivo de entorno
-
-Copia el `.env.example` a `.env` y configura tus variables (base de datos, APP\_KEY, etc).
+### 3. Configurar entorno
 
 ```bash
 cp .env.example .env
 ```
 
-### 4. Generar la clave de la aplicación
+Edita el archivo `.env` con tus variables (base de datos, `APP_KEY`, etc.).
+
+### 4. Generar clave de aplicación
 
 ```bash
 php artisan key:generate
 ```
 
-### 5. Configurar base de datos
+### 5. Configurar la base de datos
 
-Si usas SQLite:
+#### SQLite (recomendado para pruebas)
 
 ```bash
 touch database/database.sqlite
 ```
 
-Luego ajusta en `.env`:
+Y en `.env`:
 
 ```
 DB_CONNECTION=sqlite
 DB_DATABASE=/ruta/completa/a/database/database.sqlite
 ```
 
-Si usas MySQL o PostgreSQL, configura sus variables.
+#### MySQL/PostgreSQL
 
-### 6. Ejecutar migraciones y seeders (si hay)
+Edita las variables correspondientes en `.env`.
+
+### 6. Ejecutar migraciones y seeders
 
 ```bash
 php artisan migrate --seed
 ```
 
-### 7. Construir los assets frontend (React + Vite)
+### 7. Iniciar el frontend con Vite
 
 Para desarrollo:
 
 ```bash
-pnpm run dev         # o npm run dev 
+pnpm run dev  # o npm run dev
 ```
 
 Para producción:
@@ -88,12 +98,11 @@ pnpm run build
 php artisan serve
 ```
 
-Por defecto estará en [http://localhost:8000](http://localhost:8000)
+Accede en tu navegador a: [http://localhost:8000](http://localhost:8000)
 
 ---
 
-## Uso
+## 👤 Acceso de prueba
 
-* Visita `http://localhost:8000` para ver la aplicación.
-* usuario de pruebas `gmail: admin@amdmin.com, password: sosasosa`
-
+-   **Email:** `admin@admin.com`
+-   **Contraseña:** `sosasosa`
