@@ -95,4 +95,5 @@ Por defecto estará en [http://localhost:8000](http://localhost:8000)
 ## Uso
 
 * Visita `http://localhost:8000` para ver la aplicación.
+* usuario de pruebas `gmail: admin@amdmin.com, password: sosasosa`
 
