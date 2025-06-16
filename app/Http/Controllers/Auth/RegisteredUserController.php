@@ -46,7 +46,6 @@ class RegisteredUserController extends Controller
 
         Auth::login($user);
 
-        return redirect('/'); // Asegúrate de que tengas esa ruta nombrada
-
+        return redirect('/');
     }
 }

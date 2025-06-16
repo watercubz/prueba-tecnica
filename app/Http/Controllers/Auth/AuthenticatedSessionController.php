@@ -33,7 +33,6 @@ class AuthenticatedSessionController extends Controller
 
         $request->session()->regenerate();
 
-        // Redirige a la raíz '/' tras login
         return redirect()->intended('/');
     }
 

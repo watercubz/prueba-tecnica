@@ -2,6 +2,7 @@ import React, { useState } from "react";
 
 import { Menu, X, Users, Settings, BarChart3, User } from "lucide-react";
 import { Link, usePage } from "@inertiajs/react";
+
 export default function Home() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const currentUrl = usePage().url;
